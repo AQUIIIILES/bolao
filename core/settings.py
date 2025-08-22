@@ -30,7 +30,7 @@ SECRET_KEY = 'django-insecure-89dj2yiyfy%npcv3pg_j*n&!63hhuwfd==!&l5c1mez-wd690^
 DEBUG = False
 
 #ALLOWED_HOSTS = []
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['bolao-68c4.onrender.com']
 
 
 # Application definition
