@@ -6,5 +6,5 @@ from django.http import HttpResponse
 class HelloWorldView(APIView):
     def get(self, request):
         #return Response({'message': 'Hello, World!'})
-        return HttpResponse({'Hello, World!'})
+        return HttpResponse('Hello, World!')
 
