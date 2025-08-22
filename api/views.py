@@ -5,6 +5,6 @@ from django.http import HttpResponse
 # Create your views here.
 class HelloWorldView(APIView):
     def get(self, request):
-        #return Response({'message': 'Hello, World!'})
-        return HttpResponse('Hello, World!')
+        return Response({'message': 'Hello, World!'})
+        #return HttpResponse('Hello, World!')
 
