@@ -53,13 +53,13 @@ MIDDLEWARE = [
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
-    'django.middleware.clickjacking.XFrameOptionsMiddleware',
     'corsheaders.middleware.CorsMiddleware',
+    'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
 CORS_ALLOWED_ORIGINS = [
     #'http://localhost:3001',  # React app
-    'https://bolao-six.vercel.app/',  # deploy React app
+    'https://bolao-six.vercel.app',  # deploy React app
 ]
 
 ROOT_URLCONF = 'core.urls'
