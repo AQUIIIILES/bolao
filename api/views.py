@@ -1,0 +1,10 @@
+from rest_framework.views import APIView
+from rest_framework.response import Response
+from django.http import HttpResponse
+
+# Create your views here.
+class HelloWorldView(APIView):
+    def get(self, request):
+        return Response({'message': 'Hello, World!'})
+        #return HttpResponse('Hello, World!')
+
