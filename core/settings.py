@@ -25,8 +25,8 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 SECRET_KEY = 'django-insecure-89dj2yiyfy%npcv3pg_j*n&!63hhuwfd==!&l5c1mez-wd690^'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
-#DEBUG = False #para deploy
+#DEBUG = True
+DEBUG = False #para deploy
 
 #ALLOWED_HOSTS = [] 
 ALLOWED_HOSTS = os.environ.get('ALLOWED_HOSTS', '127.0.0.1').split(',') #para deploy
@@ -44,6 +44,7 @@ INSTALLED_APPS = [
     'corsheaders',
     'rest_framework',
     'api',
+    'usuarios',
 ]
 
 MIDDLEWARE = [
@@ -58,7 +59,8 @@ MIDDLEWARE = [
 ]
 
 CORS_ALLOWED_ORIGINS = [
-    #'http://localhost:3001',  # React app
+    #'http://localhost:3000',  # React app
+    #'http://localhost:5173', # Vite app
     'https://bolao-six.vercel.app',  # deploy React app
 ]
 
